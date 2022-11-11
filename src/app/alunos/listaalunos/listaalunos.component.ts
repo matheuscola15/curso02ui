@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Aluno } from 'src/app/core/model';
 
 @Component({
   selector: 'app-listaalunos',
@@ -6,6 +7,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./listaalunos.component.scss']
 })
 export class ListaalunosComponent implements OnInit {
+
+  alunos: Aluno [] = []
+  displayedColumns = ['id', 'nomealuno']
 
   constructor() { }
 
